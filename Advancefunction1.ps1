@@ -4,7 +4,7 @@ function get-JSSysteminfo {
         [CMDLetBinding()]                 #---- Makes simple parametrize function into an Advance function or you can call it Script CommandLets = That enables number of new feature#   
         param(
         [Parameter(Mandatory=$true,                       #---- Mandatory was enabled via adding CMDLetBinding()#
-                   ValueFromPipeLine=$true,               #---- Enabling this function to accept computer name via pipeline #
+                   ValueFromPipeLine=$true,               #---- Enabling this function to accept computer name via value #
                    ValueFromPipeLineByPropertyName=$true, #---- Enabling this function to accept computer name via pipeline #
                    ParameterSetName='Name',       #---- Creating parameterset,  which are basically different SETS of valid parameters or you can say we will have 2 different syntax
                    HelpMessage="Please enter the ComputerName or the Ipaddress to query WMI")]
